@@ -19,3 +19,7 @@ myPromise
   .catch(error => {
     console.error(error);
   });
+
+
+
+// A JavaScript Promise is indeed an object that represents the eventual completion (or failure) of an asynchronous operation.
