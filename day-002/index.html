@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        const heading= document.createElement("h1");
+        heading.innerHTML = "ToDo"
+
+        document.getElementById("root").appendChild(heading);
+//list 1
+        const list=document.createElement("li");
+        list.innerHTML="list 1"
+
+        const createdList=document.createElement("ul").appendChild(list)
+        document.getElementById("root").appendChild(createdList);
+//list 2
+        const list2=document.createElement("li");
+        list2.innerHTML="list 2"
+
+        const createdList2=document.createElement("ul").appendChild(list2)
+        document.getElementById("root").appendChild(createdList2);
+    </script>
+</body>
+</html>
