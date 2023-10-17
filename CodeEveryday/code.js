@@ -1,4 +1,11 @@
-var a = function (){
-  return "hello world"
+function x(){
+  var a=17;
+  function y(){
+    return a
+  }
+  return y;
 }
-console.log(a.name); // This will indeed output "a"
+
+z=x()() // IIFE (Immediately Invoked Function Expression)
+console.log(z) //output is 17 
+
