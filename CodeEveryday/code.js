@@ -1,11 +1,8 @@
-function x(){
-  var a=17;
-  function y(){
-    return a
-  }
-  return y;
-}
+(function x(){
 
-z=x()() // IIFE (Immediately Invoked Function Expression)
-console.log(z) //output is 17 
+  setTimeout(function y(){
+    console.log("vanakkam javascript")
+  },1000)
+})()
 
+// I use IIFE (Immediately Invoked Function Expression) in this code
