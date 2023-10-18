@@ -1,8 +1,13 @@
-(function x(){
+function greet(name, callback) {
+  console.log("Hello, " + name + "!");
+  callback();
+}
 
-  setTimeout(function y(){
-    console.log("vanakkam javascript")
-  },1000)
-})()
+function sayGoodbye() {
+  console.log("Goodbye!");
+}
 
-// I use IIFE (Immediately Invoked Function Expression) in this code
+greet("Tamil", sayGoodbye);
+
+// The sayGoodbye function is used as a callback within the greet function,
+// and it is executed after the greeting message is displayed.
