@@ -1,13 +1,13 @@
-function greet(name, callback) {
-  console.log("Hello, " + name + "!");
-  callback();
-}
+const printFirst = () => console.log("First");
+const printSecondWithDelay = () => setTimeout(() => console.log("Second"), 500);
+const printThird = () => console.log("Third");
 
-function sayGoodbye() {
-  console.log("Goodbye!");
-}
+printFirst();
+printSecondWithDelay();
+printThird();
 
-greet("Tamil", sayGoodbye);
 
-// The sayGoodbye function is used as a callback within the greet function,
-// and it is executed after the greeting message is displayed.
+/*
+"First" and "Third" are logged immediately, and "Second" is logged 
+after a 500 ms delay due to the setTimeout function in printSecondWithDelay.
+*/
