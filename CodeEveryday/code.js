@@ -1,12 +1,12 @@
 // Function Declaration
-console.log(multiply(2, 3)); // Hoisting allows calling before the declaration
-function multiply(x, y) {
-  return x * y;
+console.log(add(2, 3)); // Works even before the function declaration
+function add(a, b) {
+  return a + b;
 }
 
 // Function Expression
-// console.log(divide(6, 2)); // This would result in an error because the function expression is not hoisted
-var divide = function(x, y) {
-  return x / y;
+console.log(addExpression(2, 3)); // Results in an error
+var addExpression = function(a, b) {
+  return a + b;
 };
-console.log(divide(6, 2)); // This works fine when the function expression is defined before calling
+
